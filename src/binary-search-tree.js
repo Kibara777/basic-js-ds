@@ -18,18 +18,18 @@ class BinarySearchTree {
     else this.addNode(this.base, aNewNode);
   }
 
-  addNode(node, newNode) {
-    if (newNode.data < node.data) {
+  addNode(node, aNewNode) {
+    if (aNewNode.data < node.data) {
       if (node.left === null) {
-        node.left = newNode;
+        node.left = aNewNode;
       } else {
-        this.addNode(node.left, newNode);
+        this.addNode(node.left, aNewNode);
       }
     } else {
       if (node.right === null) {
-        node.right = newNode;
+        node.right = aNewNode;
       } else {
-        this.addNode(node.right, newNode);
+        this.addNode(node.right, aNewNode);
       }
     }
   }
