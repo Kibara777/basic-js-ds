@@ -22,13 +22,18 @@ class BinarySearchTree {
     if (aNewNode.data < node.data) {
       if (node.left === null) {
         node.left = aNewNode;
-      } else {
+
+      } 
+      else {
         this.addNode(node.left, aNewNode);
       }
-    } else {
+
+    } 
+    else {
       if (node.right === null) {
         node.right = aNewNode;
-      } else {
+      } 
+      else {
         this.addNode(node.right, aNewNode);
       }
     }
@@ -66,7 +71,9 @@ class BinarySearchTree {
     if (data < node.data) {
       node.left = this.removeNode(node.left, data);
       return node;
+
     }
+    
     if (data > node.data) {
       node.right = this.removeNode(node.right, data);
       return node;
